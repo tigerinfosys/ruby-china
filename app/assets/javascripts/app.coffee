@@ -26,6 +26,7 @@
 #= require topics
 #= require pages
 #= require notes
+#= require jquery.flexslider
 #= require_self
 
 window.App =
@@ -180,5 +181,5 @@ $(document).on 'page:restore', ->
 $(document).ready ->
   App.init()
   NProgress.done()
-
+  $('.flexslider').flexslider({ animation: "slide" })
 FormStorage.init()

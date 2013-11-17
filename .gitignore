@@ -29,3 +29,4 @@ solr/pids/
 bin/
 tags
 chromedriver.log
+app/assets/images/52jita/*

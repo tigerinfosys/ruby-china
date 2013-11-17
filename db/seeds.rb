@@ -25,9 +25,9 @@ eos
 
 # Footer HTML
 SiteConfig.save_default("footer_html",<<-eos
-<p class="copyright">
- &copy; 52jita.
-</p>
+  <img src="/assets/52jita/footer_bg.jpg">
+  <p class="copyright"> 爱吉他 ©2013 版权所有 </p>
+  <p class="copyright">Copyright ©2013 52jita | All rights reserved.</p>
 eos
 )
 

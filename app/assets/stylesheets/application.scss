@@ -6,6 +6,8 @@
  *= require social-share-button
  *= require jquery.atwho
  *= require nprogress
+ *= require flexslider
+ *= require home
  *= require_tree ./sprites/
  *= require_self
  */
@@ -154,11 +156,16 @@ form {
   margin-top:0px;
   padding:0;
   text-shadow: 0 1px 0 #fff;
+  .copyright{
+    color: #79b32b;
+    margin-left:400px;
+  }
 }
 .footer p {
   margin:3px 0;
   color: #555;
 }
+
 #main { position:relative;}
 #main h1 { font-size:14px; line-height:26px; font-weight:bold; text-align:right; color:#333; margin-bottom:10px; }
 

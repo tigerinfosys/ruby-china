@@ -1,13 +1,5 @@
 #home_index { line-height:160%; }
 
-h2 {
-  font-size: 12px;
-  color: #999;
-  line-height: 100%;
-  margin-bottom: 10px;
-  text-align: center;
-}
-
 #last_topics { float:left; width:450px; }
 #hot_topics { float:right; width:450px; }
 .topics h2 { font-size:14px; margin-bottom:8px;}
@@ -19,14 +11,14 @@ h2 {
 .topics ul li .node a:visited { color:#666; }
 
 .home_suggest_topics {
-  h2 { 
+  h2 {
     font-size:14px;
     margin: 0 -10px;
     padding: 0 10px 10px 10px;
     border-bottom:1px solid #ddd;
   }
   .topics {
-    .topic { 
+    .topic {
       height:50px;
       .title {
         white-space:nowrap;
@@ -42,4 +34,97 @@ h2 {
 .node_topics {
   margin-bottom:0px;
   .head { display:none; }
+}
+
+//--------------------------------------------------
+/*** promobox style ***/
+::selection {
+  background: #ff7504;
+  color: #fff;
+  text-shadow: none;
+}
+.slider_wrap {
+  height: 450px;
+  overflow: hidden;
+  position: relative;
+  background: transparent;
+  margin-top: 5px;
+}
+.promobox {
+  height: 80px;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 95px;
+  background: url(/assets/slide_text_bar_bg.png) repeat-x;
+  h1 {
+    position: absolute;
+    font-size: 28px;
+    margin-top: 24px;
+    margin-left: 24px;
+    color: #FFF;
+    text-shadow: black 1px 1px 2px;
+    text-shadow: rgba(0,0,0,0.7) 1px 2px 4px;
+  }
+  h2 {
+    display: none;
+  }
+  a{
+    height: 20px;
+    padding-left: 22px;
+    background: url(/assets/sprite.png) no-repeat;
+  }
+}
+
+.button {
+  color: #FFF;
+  float: right;
+  margin-top: 10px;
+  margin-right: 24px;
+  position: relative;
+  a.register{
+    display: block;
+    width: 210px;
+    height: 60px;
+    text-indent: -9999px;
+    background: url(/assets/sprite.png) no-repeat 0 -510px;
+  }
+  .openlogin {
+    position: absolute;
+    top: 36px;
+    left: 35px;
+    a {
+      text-indent: 0;
+      color: #D9D9D9;
+      padding-left: 22px;
+    }
+    .qq {
+      background-position: -225px -455px!important;
+    }
+    .sina {
+      background-position: -225px -478px!important;
+    }
+  }
+}
+
+.marketing{
+  height: 246px;
+  .span4{
+    height: 245px;
+  }
+}
+
+#thumbnails_title {
+  font-size: 28px;
+  text-align: left;
+}
+
+#thumbnails {
+  height: 400px;
+  margin-left: -2.5%;
+  padding-left: 0px;
+  list-style: none;
+  .span4{
+    width: 295px;
+  }
 }
