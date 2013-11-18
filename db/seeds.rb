@@ -33,10 +33,10 @@ eos
 
 # 话题后面的HTML代码
 SiteConfig.save_default("after_topic_html",<<-eos
-#<div class="share_links">
-# <a href="https://twitter.com/share" class="twitter-share-button" data-count="none"">Tweet</a>
-# <script type="text/javascript" src="//platform.twitter.com/widgets.js"></script>
-#</div>
+<div class="share_links">
+  <a href="https://twitter.com/share" class="twitter-share-button" data-count="none"">Tweet</a>
+  <script type="text/javascript" src="//platform.twitter.com/widgets.js"></script>
+</div>
 eos
 )
 
@@ -98,9 +98,9 @@ SiteConfig.save_default("reject_newbie_reply_in_the_evening", "false")
 
 # ========================= init Section, Node =========================
 s1 = Section.create(:name => "设备器材")
-Node.create(:name => "木吉他", :summary => "...", :section_id => s1.id)
-Node.create(:name => "电吉他", :summary => "...", :section_id => s1.id)
-Node.create(:name => "尤克里里", :summary => "...", :section_id => s1.id)
+Node.create(:name => "木吉他", :summary => "the nature music", :section_id => s1.id)
+Node.create(:name => "电吉他", :summary => "the best thing man made", :section_id => s1.id)
+Node.create(:name => "尤克里里", :summary => "small and cute", :section_id => s1.id)
 Node.create(:name => "吉他周边", :summary => "...", :section_id => s1.id)
 Node.create(:name => "交易", :summary => "...", :section_id => s1.id)
 
@@ -114,7 +114,7 @@ Node.create(:name => "曲谱", :summary => "...", :section_id => s2.id)
 Node.create(:name => "资源", :summary => "...", :section_id => s2.id)
 
 s3 = Section.create(:name => "站务")
-Node.create(:name => "公告", :summary => "...", :section_id => s3.id)
+announce_node = Node.create(:name => "公告", :summary => "...", :section_id => s3.id)
 Node.create(:name => "反馈", :summary => "...", :section_id => s3.id)
 Node.create(:name => "开发", :summary => "...", :section_id => s3.id)
 
@@ -122,3 +122,39 @@ SiteNode.create(:name => "国内吉他网站", :sort => 100)
 SiteNode.create(:name => "国外吉他网站", :sort => 99)
 SiteNode.create(:name => "名人明星", :sort => 97)
 SiteNode.create(:name => "其他", :sort => 94)
+
+Topic.create(
+  :title => "52jita 上线啦",
+  :node_id => announce_node.id,
+  :body => "52jita 上线啦，这是一个吉他爱好者的乐园，希望大家能在这里学好琴，交到朋友。welcome！",
+  :user_id => 1,
+  :replies_count => 1,
+  :last_reply_user_id => 1,
+  :replied_at => Time.now - 1,
+  :source => "source",
+  :created_at => Time.now - 1,
+  :updated_at => Time.now - 1
+)
+
+User.create(
+  :email => "feitian124@gmail.com",
+  :name => "feitian124",
+  :location => "shanghai",
+  :bio => "",
+  :website => "",
+  #:avatar_file_name => "",
+  :verified => false,
+  :state => 1,
+  #:qq => "",
+  :tagline => "",
+  :created_at => Time.now - 30,
+  :updated_at => Time.now - 30,
+  #:crypted_password => "",
+  #:password_salt => "",
+  #:persistence_token => "",
+  #:single_access_token => "",
+  #:perishable_token => "",
+  #:login_count => 20,
+  #:failed_login_count => 0,
+  #:notes_count => 10
+)
