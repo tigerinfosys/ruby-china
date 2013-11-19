@@ -10,7 +10,7 @@ SiteConfig.save_default("index_html",<<-eos
   <p></p>
   <p>52jita，致力于构建完善的吉他中文社区。</p>
   <p>功能正在完善中，欢迎使用和您的宝贵建议 。</p>
-  <p>诚邀有激情的活跃吉他爱好者参与维护社区，联系 <b style="color:#c00;">52jita@qq.com</b></p>
+  <p>诚邀有激情的活跃吉他爱好者参与维护社区，有意者请到社区反馈版块发帖留言</p>
 </div>
 eos
 )
@@ -85,7 +85,7 @@ SiteConfig.save_default("new_topic_dropdown_node_ids","")
 SiteConfig.save_default("ban_words_on_reply","mark\n收藏\n顶\n赞\nup\n")
 
 # 随机显示的 tip 信息
-SiteConfig.save_default("tips","提示1\n提示2")
+SiteConfig.save_default("tips","坚持就是胜利\n练吉他是耐力活")
 
 SiteConfig.save_default("newbie_notices",%(<p>为提高社区质量，防止新人一来就发帖提问接触吉他遇到的问题，新用户需要达到下面条件才可发帖：</p>
     <ol style="color:#ad2b2d;">

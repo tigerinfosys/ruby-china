@@ -27,7 +27,7 @@ class SitesController < ApplicationController
   end
 
   private
-  
+
   def site_params
     params.require(:site).permit(:name,:desc,:url,:favorite,:site_node_id)
   end
