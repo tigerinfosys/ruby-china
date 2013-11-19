@@ -75,6 +75,9 @@
   menu:
     topics: "社区"
     wiki: "Wiki"
+    video: "视频"
+    offline: "线下"
+    resource: "资源"
     users: "会员"
     cpanel: "后台"
     notes: "记事本"
