@@ -1,7 +1,7 @@
 defaults: &defaults
   app_name: "52jita"
   foot_html: "&copy; 52jita"
-  domain: "127.0.0.1:3000"
+  domain: "52jita.net"
   admin_emails:
     - "feitian124@gmail.com"
   google_analytics_key: ""
