@@ -93,6 +93,7 @@ gem 'thin', "1.5.0"
 group :development, :test do
   gem 'capistrano', '2.9.0', require: false
   gem 'rvm-capistrano', require: false
+  gem 'capistrano-rbenv', '1.0.5', require: false
   gem 'rspec-rails', '~> 2.13.2'
   gem 'factory_girl_rails'
   gem 'database_cleaner'

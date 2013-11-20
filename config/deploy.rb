@@ -1,28 +1,27 @@
 # coding: utf-8
 require "bundler/capistrano"
 require "sidekiq/capistrano"
-require "rvm/capistrano"
+require "capistrano-rbenv"
 require 'puma/capistrano'
 
 default_run_options[:pty] = true
 
-set :rvm_ruby_string, 'ruby-2.1.0'
-set :rvm_type, :user
+set :rbenv_ruby_version, '2.0.0-p247'
 set :application, "ruby-china"
-set :repository,  "git://github.com/ruby-china/ruby-china.git"
-set :branch, "master"
+set :repository,  "https://github.com/feitian124/ruby-china.git"
+set :branch, "52jita"
 set :scm, :git
-set :user, "ruby"
+set :user, "ming"
 set :deploy_to, "/data/www/#{application}"
-set :runner, "ruby"
-# set :deploy_via, :remote_cache
-set :git_shallow_clone, 1
+set :runner, "ming"
+set :deploy_via, :remote_cache
+# set :git_shallow_clone, 1
 set :puma_role, :app
 set :puma_config_file, "config/puma.rb"
 
-role :web, "ruby-china.org"                          # Your HTTP server, Apache/etc
-role :app, "ruby-china.org"                          # This may be the same as your `Web` server
-role :db,  "ruby-china.org", :primary => true # This is where Rails migrations will run
+role :web, "52jita.net"                          # Your HTTP server, Apache/etc
+role :app, "52jita.net"                          # This may be the same as your `Web` server
+role :db,  "52jita.net", :primary => true # This is where Rails migrations will run
 
 namespace :faye do
   desc "Start Faye"
