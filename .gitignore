@@ -11,6 +11,7 @@ public/assets/
 public/uploads/**/*
 public/topics
 public/topics/**/*
+config/config.yml
 .redcar
 .DS_Store
 *.swp
