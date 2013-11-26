@@ -18,7 +18,7 @@ module Redcarpet
                                :hard_wrap => true))
       end
 
-      
+
       def block_code(code, language)
         language.downcase! if language.is_a?(String)
         html = super(code, language)

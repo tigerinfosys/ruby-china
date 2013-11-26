@@ -1,4 +1,12 @@
 GIT
+  remote: git://github.com/feitian124/carrierwave-qiniu.git
+  revision: 58db114b129510a06627981b62bb5413bd7dd367
+  specs:
+    carrierwave-qiniu (0.0.8)
+      carrierwave
+      qiniu-rs (~> 3.4.2)
+
+GIT
   remote: git://github.com/huacnlee/bootstrap-helper.git
   revision: 996419b99086b845db947c0b29ac8a782021812e
   specs:
@@ -271,6 +279,11 @@ GEM
       rake
     puma (2.6.0)
       rack (>= 1.1, < 2.0)
+    qiniu-rs (3.4.6)
+      json (~> 1.7)
+      mime-types (~> 1.19)
+      rest-client (~> 1.6)
+      ruby-hmac (~> 0.4)
     quiet_assets (1.0.2)
       railties (>= 3.1, < 5.0)
     rack (1.5.2)
@@ -326,6 +339,7 @@ GEM
       rspec-core (~> 2.13.0)
       rspec-expectations (~> 2.13.0)
       rspec-mocks (~> 2.13.0)
+    ruby-hmac (0.4.0)
     ruby-progressbar (1.2.0)
     rubyzip (0.9.9)
     rvm-capistrano (1.2.2)
@@ -403,6 +417,7 @@ DEPENDENCIES
   capistrano-rbenv (= 1.0.5)
   capybara (~> 0.4.1)
   carrierwave (= 0.6.2)
+  carrierwave-qiniu!
   carrierwave-upyun (= 0.1.5)
   cells (~> 3.8.8)
   chunky_png (= 1.2.8)

@@ -5,7 +5,12 @@ defaults: &defaults
   admin_emails:
     - "feitian124@gmail.com"
   google_analytics_key: ""
-  upload_url: "http://ruby-china-files-dev.b0.upaiyun.com"
+  upload_url: "http://52jita.qiniudn.com"
+  qiniu_bucket_domain: "52jita.qiniudn.com"
+  qiniu_access_key: "z1WUAxjx4iMjmoRsiafvrgBR35_FsurLHKaUiL6b"
+  qiniu_secret_key: "dI0BodvL1x2I9PpE9l2c4oRJXg4qunE_sYlUSWeq"
+  qiniu_bucket: "52jita"
+  qiniu_protocal: "http"
   upyun_username: "test"
   upyun_password: "123123"
   upyun_bucket: "ruby-china-files-dev"
