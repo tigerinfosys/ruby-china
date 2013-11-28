@@ -24,3 +24,6 @@ solr/pids/
 bin/
 tags
 chromedriver.log
+script/cdn_sync.rb
+script/conf.json
+script/qrsync

@@ -109,7 +109,7 @@ describe Ability do
     let(:newbie) { Factory :newbie }
     let(:ability){ Ability.new(newbie) }
     context "Topic" do
-      it { should_not be_able_to(:create, Topic) }
+      it { should be_able_to(:create, Topic) }
       it { should_not be_able_to(:suggest, Topic) }
       it { should_not be_able_to(:unsuggest, Topic) }
     end

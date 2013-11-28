@@ -59,10 +59,10 @@ describe TopicsController do
         response.should be_success
       end
 
-      it "should not allow access from newbie user" do
+      it "should allow access from newbie user" do
         sign_in newbie
         get :new
-        response.should_not be_success
+        response.should be_success
       end
     end
   end
