@@ -32,13 +32,13 @@ eos
 )
 
 # 话题后面的HTML代码
-SiteConfig.save_default("after_topic_html",<<-eos
-<div class="share_links">
-  <a href="https://twitter.com/share" class="twitter-share-button" data-count="none"">Tweet</a>
-  <script type="text/javascript" src="//platform.twitter.com/widgets.js"></script>
-</div>
-eos
-)
+# SiteConfig.save_default("after_topic_html",<<-eos
+# <div class="share_links">
+#   <a href="https://twitter.com/share" class="twitter-share-button" data-count="none"">Tweet</a>
+#   <script type="text/javascript" src="//platform.twitter.com/widgets.js"></script>
+# </div>
+# eos
+# )
 
 # 话题正文前面的HTML
 SiteConfig.save_default("before_topic_html",<<-eos
@@ -87,10 +87,10 @@ SiteConfig.save_default("ban_words_on_reply","mark\n收藏\n顶\n赞\nup\n")
 # 随机显示的 tip 信息
 SiteConfig.save_default("tips","坚持就是胜利\n练吉他是耐力活")
 
-SiteConfig.save_default("newbie_notices",%(<p>为提高社区质量，防止新人一来就发帖提问接触吉他遇到的问题，新用户需要达到下面条件才可发帖：</p>
+SiteConfig.save_default("newbie_notices",%(<p>为提高社区质量，请新人发帖时注意：</p>
     <ol style="color:#ad2b2d;">
-      <li>注册时间超过一个月；</li>
-      <li>回帖数量必须达到 10 贴以上；</li>
+      <li>请选择合适的节点，尽量不要发重复的话题；</li>
+      <li>请遵守国家法律法规，不要发广告等无关话题；</li>
     </ol>
     <p>请在新人阶段多浏览，看看其他老用户是如何在社区里面分享与解决问题的。</p>))
 
