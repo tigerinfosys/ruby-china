@@ -12,8 +12,8 @@ defaults: &defaults
   qiniu_bucket: "52jita"
   qiniu_protocal: "http"
   email_server: "smtp.exmail.qq.com"
-  email_sender: 'dev-test@ruby-china.org'
-  email_password: 'test123456'
+  email_sender: 'service@52jita.net'
+  email_password: '52jita.net'
   faye_server: "http://127.0.0.1:8080/faye"
   faye_token: "123456"
   twitter_token: "uJ9fBa53SmqrHBqs1qq5cg"
