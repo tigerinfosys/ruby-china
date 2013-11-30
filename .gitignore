@@ -8,6 +8,7 @@ log/*.log*
 tmp/**/*
 .sass-cache/
 public/assets/
+app/assets/images/emojis/
 public/uploads/**/*
 public/topics
 public/topics/**/*
