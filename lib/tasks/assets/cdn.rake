@@ -1,9 +1,9 @@
-require 'ftp_sync'
+
 namespace :assets do
   desc 'sync assets to cdns'
   task :cdn => :environment do
-    #ftp = FtpSync.new("v1.ftp.upyun.com", [Setting.upyun_username,Setting.upyun_bucket].join("/"), Setting.upyun_password,true)
-    #ftp.sync("#{Rails.root}/public/assets/", "/assets")
-    `/home/ming/app/qiniu_devtools_v26/qrsync /home/ming/app/qiniu_devtools_v26/conf.json`
+    tool_folder="#{Rails.root}/script"
+    # get tools from http://docs.qiniu.com/tools/v6/index.html and put them in tool_foolder
+    `"#{tool_folder}/qrsync #{tool_folder}/conf.json"`
   end
 end

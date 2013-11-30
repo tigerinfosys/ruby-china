@@ -41,9 +41,9 @@ eos
 # )
 
 # 话题正文前面的HTML
-SiteConfig.save_default("before_topic_html",<<-eos
-eos
-)
+# SiteConfig.save_default("before_topic_html",<<-eos
+# eos
+# )
 
 # 话题列表首页边栏HTML
 SiteConfig.save_default("topic_index_sidebar_html",<<-eos

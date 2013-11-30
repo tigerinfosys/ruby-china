@@ -11,9 +11,6 @@ defaults: &defaults
   qiniu_secret_key: "dI0BodvL1x2I9PpE9l2c4oRJXg4qunE_sYlUSWeq"
   qiniu_bucket: "52jita"
   qiniu_protocal: "http"
-  upyun_username: "test"
-  upyun_password: "123123"
-  upyun_bucket: "ruby-china-files-dev"
   email_server: "smtp.exmail.qq.com"
   email_sender: 'dev-test@ruby-china.org'
   email_password: 'test123456'
