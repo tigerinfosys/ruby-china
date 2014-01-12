@@ -70,12 +70,16 @@
     create: Submit a site
   menu:
     topics: "Discussion"
+    videos: "Videos"
+    tablatures: "Tablatures"
+    offline: "Offline"
+    maps: "Music map"
     wiki: "Wiki"
+    sites: "Sites"
     users: "Users"
     cpanel: "Control Panel"
     notes: "Notes"
     nodes: "Nodes"
-    sites: "Sites"
     my_home_page: "My home page"
     edit_account_path: "Account Profile"
     likes: "Favorites"

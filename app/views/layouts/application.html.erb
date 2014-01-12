@@ -13,8 +13,7 @@
   <% end %>
   <meta name="keywords" content="<%= @meta_keywords %>" />
   <meta name="description" content="<%= @meta_description %>" />
-  <meta charset='utf-8' />
-  <link rel="shortcut icon" href="<%= asset_path("big_logo.png") %>" />
+  <meta charset='utf-8' /> <link rel="shortcut icon" href="<%= asset_path("big_logo.png") %>" />
   <%= raw SiteConfig.custom_head_html %>
   <%= csrf_meta_tag %>
   <%= auto_discovery_link_tag(:rss,feed_topics_url,:title => '订阅最新帖') %>
@@ -30,9 +29,10 @@
         </h3>
         <%= render_list :class => "nav" do |li|
            li << link_to(t("menu.topics"), topics_path)
-         #  li << link_to(t("menu.video"), "#" )
-         #  li << link_to(t("menu.tablature"), "#" )
-         #  li << link_to(t("menu.offline"), "#" )
+           li << link_to(t("menu.videos"), "#" )
+           li << link_to(t("menu.tablatures"), "#" )
+         # li << link_to(t("menu.offline"), "#" )
+           li << link_to(t("menu.maps"), "#" )
            li << link_to(t("menu.wiki"), pages_path )
            li << link_to(t("menu.sites"), sites_path ) if !mobile?
            li << link_to(t("menu.users"), users_path) if !mobile?
@@ -53,9 +53,7 @@
       <div class="feed_link hidden-phone">
         <% if not mobile? %>
           <%= link_to(sanitize("<span class='icon icons_rss'></span> Feed"), feed_topics_url, :title => t("topics.subscribe_with_rss", :name => Setting.app_name), :class => "feed", :target => "_blank") %>
-        <% end %>
-      </div>
-    <% end %>
+        <% end %> </div> <% end %>
 
     <%= notice_message %>
     <div id="main" class="container-fluid">
