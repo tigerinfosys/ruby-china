@@ -71,6 +71,7 @@
   sites:
     create: "登記網站"
   menu:
+    home: "首页"
     topics: "社區"
     wiki: "Wiki"
     users: "會員"
@@ -78,6 +79,7 @@
     notes: "記事本"
     nodes: "節點"
     sites: "酷站"
+    tweets: "推文"
     my_home_page: "我的首頁"
     edit_account_path: "個人資料設定"
     likes: "我的收藏"

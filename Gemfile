@@ -1,7 +1,7 @@
 # coding: utf-8
 source 'http://ruby.taobao.org'
 
-gem "rails", "4.0.2"
+gem "rails", "4.0.3"
 gem 'turbolinks', '~> 1.2.0'
 gem 'jquery-turbolinks', '2.0.0'
 gem 'actionpack-action_caching', '1.0.0'
@@ -12,7 +12,7 @@ gem 'uglifier', '>= 1.3.0'
 gem "rails-i18n","0.1.8"
 gem "jquery-rails", "3.0.4"
 gem "rails_autolink", ">= 1.1.0"
-gem "md_emoji"
+gem "md_emoji", "1.0.2"
 gem 'exception_notification'
 gem "jbuilder", "~> 2.0.2"
 
@@ -71,7 +71,7 @@ gem 'faye-rails','1.0.0'
 gem "social-share-button", '0.1.4'
 
 # 表单
-gem 'simple_form', "3.0.0.rc"
+gem 'simple_form', "3.0.1"
 
 # API
 gem 'grape', github: 'intridea/grape', branch: 'frontier'
@@ -89,6 +89,8 @@ gem 'eventmachine', '1.0.3'
 gem "puma", "2.6.0"
 # Faye Server 需要
 gem 'thin', "1.5.0"
+# for api 跨域
+gem 'rack-cors', require: 'rack/cors'
 
 group :development, :test do
   gem 'capistrano', '2.9.0', require: false
